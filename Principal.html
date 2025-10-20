@@ -1,196 +1,350 @@
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Principal.css" />
     <link rel="shortcut icon" href="Imgs/Logo.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Augustoflix</title>
-  </head>
-  <body>
-    <header>
-      <img src="Imgs/Logo.png" alt="" style="width: 80px" />
-      <img id="menu" src="Imgs/Group 4.png" alt="" />
-      <div id="opcoes">
-        <a href="#mais visto"><strong>MAIS VISTOS</strong></a>
-        <a href="#recomendado"><strong>RECOMENDADOS</strong></a>
-        <a href="./sobre.html"><strong>SOBRE NÓS</strong></a>
-        <a href="index.html"><strong>CADASTRO</strong></a>
-      </div>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container-cabecalho">
+            <div class="logo">
+                <img src="Imgs/Logo.png" alt="Augustoflix" />
+                <span>Augustoflix</span>
+            </div>
+            
+            <nav class="navegacao">
+                <a href="#inicio" class="link-navegacao ativo">Início</a>
+                <a href="#mais-vistos" class="link-navegacao">Mais Vistos</a>
+                <a href="#recomendados" class="link-navegacao">Recomendados</a>
+            </nav>
+
+            <div class="acoes-cabecalho">
+                <div class="menu-perfil">
+                    <img src="Imgs/Group 4.png" alt="Perfil" class="imagem-perfil">
+                    <div class="opcoes-perfil">
+                        <a href="./sobre.html">Sobre Nós</a>
+                        <a href="index.html">Cadastro</a>
+                        <a href="Login.html">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <main>
-      <table border="5">
-        <!-- Filmes Mais Vistos -->
-        <tr id="mais visto">
-          <td colspan="5"><h1>Filmes Mais Vistos</h1></td>
-        </tr>
+    <!-- Seção Hero -->
+    <section class="hero" id="inicio">
+        <div class="conteudo-hero">
+            <div class="info-hero">
+                <h1 class="titulo-hero">Interestelar</h1>
+                <p class="descricao-hero">
+                    Quando a vida na Terra se torna impossível, um grupo de astronautas 
+                    embarca em uma jornada épica através de um buraco de minhoca para 
+                    encontrar um novo lar para a humanidade.
+                </p>
+                <div class="botoes-hero">
+                    <button class="botao-reproduzir">
+                        <span>Reproduzir</span>
+                    </button>
+                    <a href="MaisInformacoes.html" style="text-decoration: none;">
+                        <button class="botao-informacoes">
+                            <span>Mais Informações</span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="cartaz-hero">
+                <img src="Imgs/Interestelar.png" alt="Interestelar" />
+            </div>
+        </div>
+    </section>
 
-        <!-- Mais Visto 1 -->
-        <tr>
-          <td>
-            <strong>Até o Último Homem</strong>
-            2016
+    <!-- Conteúdo Principal -->
+    <main class="conteudo-principal">
+        <!-- Seção Mais Vistos -->
+        <section class="secao-filmes" id="mais-vistos">
+            <div class="cabecalho-secao">
+                <h2>Mais Vistos</h2>
+            </div>
+            <div class="linha-filmes">
+                <div class="cartao-filme">
+                    <div class="cartaz-filme">
+                        <img src="Imgs/Até o Último Homem.png" alt="Até o Último Homem" />
+                        <div class="sobreposicao-cartaz">
+                            <button class="botao-reproduzir-mini">Reproduzir</button>
+                            <a href="AteUltimoHomem.html" style="color: #000000; text-decoration: none;">
+                                <button class="botao-info-mini">Info</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-filme">
+                        <h3>Até o Último Homem</h3>
+                        <p class="ano-filme">2016 • Ação/Drama</p>
+                        <p class="descricao-filme">Baseado na história real de Desmond Doss, um médico que serviu na Segunda Guerra Mundial sem portar armas.</p>
+                        <div class="avaliacao-filme">
+                            <span class="estrelas">★★★★☆</span>
+                            <span class="nota">8.1</span>
+                        </div>
+                        <div class="detalhes-filme">
+                            <span class="duracao">139 min</span>
+                            <span class="classificacao-idade">14+</span>
+                        </div>
+                    </div>
+                </div>
 
-            <a
-              id="linkFilmes"
-              href="https://www.imdb.com/pt/title/tt2119532/?ref_=fn_all_ttl_1"
-              ><img
-                title="Até o Último Homem"
-                src="Imgs/Até o Último Homem.png"
-                alt="Filme 1"
-                id="filme"
-            /></a>
-            <a id="linkFilmes" href="Mais Vistos.html">Saiba Mais</a>
-          </td>
+                <div class="cartao-filme">
+                    <div class="cartaz-filme">
+                        <img src="Imgs/Avengers.png" alt="Vingadores: Ultimato" />
+                        <div class="sobreposicao-cartaz">
+                            <button class="botao-reproduzir-mini">Reproduzir</button>
+                            <button class="botao-info-mini">Info</button>
+                        </div>
+                    </div>
+                    <div class="info-filme">
+                        <h3>Vingadores: Ultimato</h3>
+                        <p class="ano-filme">2019 • Ação/Ficção Científica</p>
+                        <p class="descricao-filme">Os Vingadores se unem para desfazer as ações de Thanos e restaurar o equilíbrio no universo.</p>
+                        <div class="avaliacao-filme">
+                            <span class="estrelas">★★★★★</span>
+                            <span class="nota">8.4</span>
+                        </div>
+                        <div class="detalhes-filme">
+                            <span class="duracao">181 min</span>
+                            <span class="classificacao-idade">12+</span>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Mais Visto 2 -->
-          <td>
-            <strong>Vingadores: Ultimato</strong>
-            2019
-            <a
-              id="linkFilmes"
-              href="https://www.imdb.com/pt/title/tt4154796/?ref_=mv_close"
-              ><img
-                title="Vingadores: Ultimato"
-                src="Imgs/Avengers.png"
-                alt="Filme 2"
-                id="filme"
-            /></a>
-          </td>
+                <div class="cartao-filme">
+                    <div class="cartaz-filme">
+                        <img src="Imgs/Titanic.png" alt="Titanic" />
+                        <div class="sobreposicao-cartaz">
+                            <button class="botao-reproduzir-mini">Reproduzir</button>
+                            <button class="botao-info-mini">Info</button>
+                        </div>
+                    </div>
+                    <div class="info-filme">
+                        <h3>Titanic</h3>
+                        <p class="ano-filme">1997 • Romance/Drama</p>
+                        <p class="descricao-filme">A história épica de amor entre Jack e Rose a bordo do navio mais famoso da história.</p>
+                        <div class="avaliacao-filme">
+                            <span class="estrelas">★★★★★</span>
+                            <span class="nota">7.8</span>
+                        </div>
+                        <div class="detalhes-filme">
+                            <span class="duracao">194 min</span>
+                            <span class="classificacao-idade">12+</span>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Mais Visto 3 -->
-          <td>
-            <strong>Titanic</strong>
-            1997
-            <a
-              id="linkFilmes"
-              href="https://www.imdb.com/pt/title/tt0120338/?ref_=mv_close"
-              ><img
-                title="Titanic"
-                src="Imgs/Titanic.png"
-                alt="Filme 3"
-                id="filme"
-            /></a>
-          </td>
+                <div class="cartao-filme">
+                    <div class="cartaz-filme">
+                        <img src="Imgs/Super Heroi.png" alt="Super Heroi: O Filme" />
+                        <div class="sobreposicao-cartaz">
+                            <button class="botao-reproduzir-mini">Reproduzir</button>
+                            <button class="botao-info-mini">Info</button>
+                        </div>
+                    </div>
+                    <div class="info-filme">
+                        <h3>Super Heroi: O Filme</h3>
+                        <p class="ano-filme">2008 • Comédia/Ação</p>
+                        <p class="descricao-filme">Uma paródia hilariante dos filmes de super-heróis com muito humor e ação.</p>
+                        <div class="avaliacao-filme">
+                            <span class="estrelas">★★★☆☆</span>
+                            <span class="nota">6.2</span>
+                        </div>
+                        <div class="detalhes-filme">
+                            <span class="duracao">85 min</span>
+                            <span class="classificacao-idade">14+</span>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Mais Visto 4 -->
-          <td>
-            <strong>Super Heroi: O Filme</strong>
-            2008
-            <a
-              id="linkFilmes"
-              href="https://www.imdb.com/pt/title/tt0426592/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_super%2520heroi"
-              ><img
-                title="Super Heroi: O filme"
-                src="Imgs/Super Heroi.png"
-                alt="Filme 4"
-                id="filme"
-            /></a>
-          </td>
+                <div class="cartao-filme">
+                    <div class="cartaz-filme">
+                        <img src="Imgs/Alien.png" alt="Alien: Romulus" />
+                        <div class="sobreposicao-cartaz">
+                            <button class="botao-reproduzir-mini">Reproduzir</button>
+                            <button class="botao-info-mini">Info</button>
+                        </div>
+                    </div>
+                    <div class="info-filme">
+                        <h3>Alien: Romulus</h3>
+                        <p class="ano-filme">2024 • Terror/Ficção Científica</p>
+                        <p class="descricao-filme">Uma nova aventura na franquia Alien com terror espacial e criaturas mortais.</p>
+                        <div class="avaliacao-filme">
+                            <span class="estrelas">★★★★☆</span>
+                            <span class="nota">7.9</span>
+                        </div>
+                        <div class="detalhes-filme">
+                            <span class="duracao">119 min</span>
+                            <span class="classificacao-idade">16+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-          <!-- Mais Visto 5 -->
-          <td>
-            <strong>Alien: Romulus</strong>
-            2024
-            <a
-              id="linkFilmes"
-              href="https://www.imdb.com/pt/title/tt18412256/?ref_=mv_close"
-              ><img
-                title="Alien: Romulus"
-                src="Imgs/Alien.png"
-                alt="Filme 5"
-                id="filme"
-            /></a>
-          </td>
-        </tr>
+        <!-- Seção Recomendados -->
+        <section class="secao-filmes" id="recomendados">
+            <div class="cabecalho-secao">
+                <h2>Recomendados para Você</h2>
+            </div>
+            <div class="linha-filmes">
+                <div class="cartao-filme">
+                    <div class="cartaz-filme">
+                        <img src="Imgs/Gigantes de Aço.png" alt="Gigantes de Aço" />
+                        <div class="sobreposicao-cartaz">
+                            <button class="botao-reproduzir-mini">Reproduzir</button>
+                            <button class="botao-info-mini">Info</button> 
+                        </div>
+                    </div>
+                    <div class="info-filme">
+                        <h3>Gigantes de Aço</h3>
+                        <p class="ano-filme">2011 • Ação/Ficção Científica</p>
+                        <p class="descricao-filme">Em um futuro onde robôs lutam por entretenimento, um ex-lutador encontra esperança em um robô antigo.</p>
+                        <div class="avaliacao-filme">
+                            <span class="estrelas">★★★★☆</span>
+                            <span class="nota">7.1</span>
+                        </div>
+                        <div class="detalhes-filme">
+                            <span class="duracao">127 min</span>
+                            <span class="classificacao-idade">12+</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Filmes Recomendados -->
-        <tr id="recomendado">
-          <td class="titulo-secao" colspan="5"><h1>Filmes Recomendados</h1></td>
-        </tr>
+                <div class="cartao-filme">
+                    <div class="cartaz-filme">
+                        <img src="Imgs/Adolescente.png" alt="Adolescência" />
+                        <div class="sobreposicao-cartaz">
+                            <button class="botao-reproduzir-mini">Reproduzir</button>
+                            <button class="botao-info-mini">Info</button>
+                        </div>
+                    </div>
+                    <div class="info-filme">
+                        <h3>Adolescência</h3>
+                        <p class="ano-filme">2025 • Drama/Comédia</p>
+                        <p class="descricao-filme">Uma história tocante sobre os desafios e descobertas da adolescência moderna.</p>
+                        <div class="avaliacao-filme">
+                            <span class="estrelas">★★★★☆</span>
+                            <span class="nota">7.5</span>
+                        </div>
+                        <div class="detalhes-filme">
+                            <span class="duracao">98 min</span>
+                            <span class="classificacao-idade">12+</span>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Recomendado 1 -->
-        <tr>
-          <td>
-            <strong>Gigantes de Aço</strong>
-            2011
-            <a
-              id="linkFilmes"
-              href="https://www.imdb.com/pt/title/tt0433035/?ref_=mv_close"
-              ><img
-                title="Gigantes de Aço"
-                src="Imgs/Gigantes de Aço.png"
-                alt="Recomendado 1"
-                id="filme"
-            /></a>
-            <a id="linkFilmes" href="Recomendados.html">Saiba Mais</a>
-          </td>
+                <div class="cartao-filme">
+                    <div class="cartaz-filme">
+                        <img src="Imgs/Interestelar.png" alt="Interestelar" />
+                        <div class="sobreposicao-cartaz">
+                            <button class="botao-reproduzir-mini">Reproduzir</button>
+                            <button class="botao-info-mini">
+                                <a href="Interestelar.html" style="color: #000000; text-decoration: none;">Info</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="info-filme">
+                        <h3>Interestelar</h3>
+                        <p class="ano-filme">2014 • Ficção Científica/Drama</p>
+                        <p class="descricao-filme">Uma jornada épica através do espaço e tempo para salvar a humanidade.</p>
+                        <div class="avaliacao-filme">
+                            <span class="estrelas">★★★★★</span>
+                            <span class="nota">8.6</span>
+                        </div>
+                        <div class="detalhes-filme">
+                            <span class="duracao">169 min</span>
+                            <span class="classificacao-idade">12+</span>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Recomendado 2 -->
-          <td>
-            <strong>Adolescência</strong>
-            2025
-            <a
-              id="linkFilmes"
-              href="https://www.imdb.com/pt/title/tt31806037/?ref_=fn_all_ttl_1"
-              ><img
-                title="Adolescente"
-                src="Imgs/Adolescente.png"
-                alt="Recomendado 2"
-                id="filme"
-            /></a>
-          </td>
+                <div class="cartao-filme">
+                    <div class="cartaz-filme">
+                        <img src="Imgs/Extraordinario.png" alt="Extraordinário" />
+                        <div class="sobreposicao-cartaz">
+                            <button class="botao-reproduzir-mini">Reproduzir</button>
+                            <button class="botao-info-mini">Info</button>
+                        </div>
+                    </div>
+                    <div class="info-filme">
+                        <h3>Extraordinário</h3>
+                        <p class="ano-filme">2017 • Drama/Família</p>
+                        <p class="descricao-filme">A história inspiradora de um garoto com diferenças faciais que muda a vida de todos ao seu redor.</p>
+                        <div class="avaliacao-filme">
+                            <span class="estrelas">★★★★★</span>
+                            <span class="nota">8.0</span>
+                        </div>
+                        <div class="detalhes-filme">
+                            <span class="duracao">113 min</span>
+                            <span class="classificacao-idade">Livre</span>
+                        </div>
+                    </div>
+                </div>
 
-          <!-- Recomendado 3 -->
-          <td>
-            <strong>Interestelar</strong>
-            2014
-            <a
-              id="linkFilmes"
-              href="https://www.imdb.com/pt/title/tt0816692/?ref_=nv_sr_srsg_1_tt_7_nm_0_in_0_q_interestelar"
-              ><img
-                title="Interestelar"
-                src="Imgs/Interestelar.png"
-                alt="Recomendado 3"
-                id="filme"
-            /></a>
-          </td>
-
-          <!-- Recomendado 4 -->
-          <td>
-            <strong>Extraordinário</strong>
-            2017
-            <a
-              id="linkFilmes"
-              href="https://www.imdb.com/pt/title/tt2543472/?ref_=mv_close"
-              ><img
-                title="Extraordinario"
-                src="Imgs/Extraordinario.png"
-                alt="Recomendado 4"
-                id="filme"
-            /></a>
-          </td>
-
-          <!-- Recomendado 5 -->
-          <td>
-            <strong>O Menino que Descobriu o Vento</strong>
-            2019
-            <a
-              id="linkFilmes"
-              href="https://www.imdb.com/pt/title/tt7533152/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_O%2520menino%2520que%2520des"
-              ><img
-                title="O Menino que Descobriu o Vento"
-                src="Imgs/O menino.png"
-                alt="Recomendado 5"
-                id="filme"
-            /></a>
-          </td>
-        </tr>
-      </table>
+                <div class="cartao-filme">
+                    <div class="cartaz-filme">
+                        <img src="Imgs/O menino.png" alt="O Menino que Descobriu o Vento" />
+                        <div class="sobreposicao-cartaz">
+                            <button class="botao-reproduzir-mini">Reproduzir</button>
+                            <button class="botao-info-mini">Info</button>
+                        </div>
+                    </div>
+                    <div class="info-filme">
+                        <h3>O Menino que Descobriu o Vento</h3>
+                        <p class="ano-filme">2019 • Drama/Biografia</p>
+                        <p class="descricao-filme">A história real de William Kamkwamba, que construiu um moinho de vento para salvar sua vila.</p>
+                        <div class="avaliacao-filme">
+                            <span class="estrelas">★★★★☆</span>
+                            <span class="nota">7.6</span>
+                        </div>
+                        <div class="detalhes-filme">
+                            <span class="duracao">113 min</span>
+                            <span class="classificacao-idade">12+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-      <p>&copy; 2025 Augustoflix. Todos os direitos reservados.&reg;</p>
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="conteudo-rodape">
+            <div class="secao-rodape">
+                <h3>Augustoflix</h3>
+                <p>Sua plataforma de streaming favorita com os melhores filmes e séries.</p>
+            </div>
+            <div class="secao-rodape">
+                <h4>Links Úteis</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#mais-vistos">Mais Vistos</a></li>
+                    <li><a href="#recomendados">Recomendados</a></li>
+                    <li><a href="./sobre.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+            <div class="secao-rodape">
+                <h4>Suporte</h4>
+                <ul>
+                    <li><a href="#">Central de Ajuda</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="#">Privacidade</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="base-rodape">
+            <p>&copy; 2025 Augustoflix. Todos os direitos reservados.</p>
+        </div>
     </footer>
-  </body>
+</body>
 </html>
