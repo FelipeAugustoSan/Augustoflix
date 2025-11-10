@@ -163,7 +163,7 @@ body {
 .conteudo-hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    margin-right: 20rem;
     max-width: 1200px;
     padding: 0 4%;
     align-items: center;
@@ -172,7 +172,7 @@ body {
 }
 
 .info-hero {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .titulo-hero {
@@ -232,23 +232,6 @@ body {
     transform: scale(1.05);
 }
 
-.cartaz-hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cartaz-hero img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-}
-
-.cartaz-hero img:hover {
-    transform: scale(1.02);
-}
 
 /* ===== CONTEÚDO PRINCIPAL ===== */
 .conteudo-principal {
