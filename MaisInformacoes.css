@@ -61,9 +61,9 @@ body {
   transition: color 0.3s ease;
   position: relative;
 }
-
 .link-navegacao:hover {
-  color: #ffffff;
+  color: #CBB444;
+  transform: translateY(2px);
 }
 
 .link-navegacao.ativo::after {
