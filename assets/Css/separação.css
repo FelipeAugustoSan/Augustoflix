@@ -11,6 +11,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
 }
+
 /* ===== CABEÇALHO ===== */
 .cabecalho {
     position: fixed;
@@ -41,8 +42,8 @@ body {
 }
 
 .logo img {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 4px;
 }
 
@@ -62,7 +63,7 @@ body {
 
 .link-navegacao:hover {
     color: #CBB444;
-    transform: translateY(2px);
+    transform: translateY(-2px);
 }
 
 .acoes-cabecalho {
@@ -77,8 +78,8 @@ body {
 }
 
 .imagem-perfil {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 4px;
 }
 
@@ -93,7 +94,7 @@ body {
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 6px;
     padding: 0.5rem 0;
-    min-width: 150px;
+    min-width: 9.37rem;
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
