@@ -329,15 +329,6 @@ hr {
   line-height: 1;
 }
 
-/* ===== FOTOS ===== */
-.fotos {
-    position: relative;
-  overflow: hidden;
-  border-radius: 1rem;
-  aspect-ratio: 16/9;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
 
 /* ===== GALERIAS ===== */
 .galeria-secao {
