@@ -30,7 +30,7 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.445) 0%, transparent 100%);
 }
 
 .container-cabecalho {
@@ -64,11 +64,12 @@ body {
 }
 
 .link-navegacao {
-  color: #353535;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
   position: relative;
+  
 }
 
 .link-navegacao:hover {
@@ -326,6 +327,16 @@ hr {
   left: 0;
   z-index: 1;
   line-height: 1;
+}
+
+/* ===== FOTOS ===== */
+.fotos {
+    position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  aspect-ratio: 16/9;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 /* ===== GALERIAS ===== */
